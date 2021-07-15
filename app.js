@@ -12,6 +12,13 @@ for (let i = 0; i < 3; i++) {
     flipcards.push(card);
 }
 
+//Python deck
+for (let i = 0; i < python_cards.length; i++) {
+    const card = python_cards[i];
+    card.deck = "python";
+    flipcards.push(card);
+}
+
 const setCurrentDeck = function (choice) {
     if (choice != "aws" && choice != "test") {
         choice = "aws";
